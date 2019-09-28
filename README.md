@@ -1,6 +1,10 @@
 Github Actions
 --------------
 
+| Action               | Description                                      |
+|----------------------|--------------------------------------------------|
+| [s3-sync](s3-sync)   | Syncs local directory with s3-compatible remote. |
+
 License
 -------
 

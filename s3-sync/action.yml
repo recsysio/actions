@@ -1,0 +1,16 @@
+name: 's3-sync'
+description: 'Syncs local directory with s3-compatible remote'
+inputs:
+  local_dir:
+    description: 'Local directory'
+    required: true
+  s3_dir:
+    description: 'Destination directory'
+    required: true
+    default: ''
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.local_dir }}
+    - ${{ inputs.s3_dir }}
